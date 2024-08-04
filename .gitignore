@@ -32,3 +32,6 @@ override.tf.json
 .terraform-docs.yaml
 
 .terraform-docs.yaml
+
+# Do not include .envrc
+.envrc
