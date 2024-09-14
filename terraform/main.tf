@@ -2,7 +2,7 @@
 resource "github_repository" "portfolio" {
   name        = "portfolio"
   description = "Website for my portfolio"
-  visibility  = "public"
+  visibility  = "private"
 
   allow_merge_commit = true
   allow_rebase_merge = true
@@ -12,3 +12,5 @@ resource "github_repository" "portfolio" {
 output "example_repo_clone_rul" {
   value = github_repository.portfolio.ssh_clone_url
 }
+
+resource "null_resource" "test" {}
